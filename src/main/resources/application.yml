@@ -1,0 +1,17 @@
+server:
+  port: 8090
+  contextPath: /SpringBootRestApi
+spring:
+  devtools:
+    restart:
+      enabled: true
+---
+spring:
+  profiles: test
+server:
+  port: 8091
+---
+  spring:
+    profiles: pro
+  server:
+    port: 8092
